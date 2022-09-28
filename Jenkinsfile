@@ -52,20 +52,16 @@ pipeline{
             steps{
                 sh 'mvn package'
             }
-        }  stage('Deploy')
+        } 
+        
+        stage('Deploy')
         {
             steps{
                 echo 'Deploy Code'
             }
         }
         
-          stage('Package')
-        {
-            steps{
-                sh 'mvn package'
-            }
-        }
-        }
+       }
     
         }
         
